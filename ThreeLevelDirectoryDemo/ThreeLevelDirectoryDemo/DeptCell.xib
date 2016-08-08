@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="deptCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="deptCell" id="KGk-i7-Jjw" customClass="DeptCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mark_up.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jj2-vR-zKd">
+                        <rect key="frame" x="28" y="16" width="11" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="11" id="3lH-hw-rzz"/>
+                            <constraint firstAttribute="width" constant="11" id="eIS-FM-6gK"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBM-sj-MJB">
+                        <rect key="frame" x="49" y="13" width="38" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Jj2-vR-zKd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="QcH-ve-gte"/>
+                    <constraint firstItem="Jj2-vR-zKd" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="U0W-uz-r8R"/>
+                    <constraint firstItem="nBM-sj-MJB" firstAttribute="leading" secondItem="Jj2-vR-zKd" secondAttribute="trailing" constant="10" id="gfP-nV-zAO"/>
+                    <constraint firstItem="nBM-sj-MJB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="h3M-sk-C4k"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="deptNameLabel" destination="nBM-sj-MJB" id="73s-54-SSE"/>
+                <outlet property="imageArrow" destination="Jj2-vR-zKd" id="gYA-Cr-XtD"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="mark_up.png" width="64" height="64"/>
+    </resources>
+</document>
